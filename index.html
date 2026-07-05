@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Zeeshan · AI Systems Consulting, Dubai</title>
+<meta name="description" content="One 30-minute call to see where AI fits in your UAE business: what it is worth in hours and dirhams, and whether it is worth doing. Independent, fixed-fee, Dubai.">
+
+<!-- OpenGraph -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Muhammad Zeeshan · AI Systems Consulting, Dubai">
+<meta property="og:description" content="One 30-minute call to see where AI fits in your UAE business: what it is worth in hours and dirhams, and whether it is worth doing. Independent, fixed-fee, Dubai.">
+<meta property="og:url" content="https://muhzee.com">
+<meta property="og:site_name" content="Muhammad Zeeshan">
+<meta property="og:image" content="https://muhzee.com/muhammad-zeeshan.png">
+<meta property="og:image:alt" content="Muhammad Zeeshan">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Muhammad Zeeshan",
+  "jobTitle": "AI Systems Consultant",
+  "url": "https://muhzee.com",
+  "email": "mailto:me@muhzee.com",
+  "image": "https://muhzee.com/muhammad-zeeshan.png",
+  "address": { "@type": "PostalAddress", "addressLocality": "Dubai", "addressCountry": "AE" },
+  "sameAs": [ "https://www.linkedin.com/in/mzshan", "https://alvara.ae" ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Muhammad Zeeshan · AI Systems Consulting",
+  "url": "https://muhzee.com",
+  "areaServed": "AE",
+  "founder": { "@type": "Person", "name": "Muhammad Zeeshan" },
+  "makesOffer": {
+    "@type": "Offer",
+    "itemOffered": {
+      "@type": "Service",
+      "name": "AI Process Audit",
+      "description": "A two-week audit of a business's three heaviest processes: benchmarked hours and cost, a prioritized automation roadmap, and a fixed-fee quote per roadmap item."
+    }
+  }
+}
+</script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  /* ---- Color tokens (MZ, light mode only) ---- */
+  :root {
+    --paper: #FAFBFC;
+    --paper-2: #F3F5F7;
+    --card: #FFFFFF;
+    --ink: #0C0E11;
+
+    --gray-900: #0C0E11;
+    --gray-700: #3A4048;
+    --gray-600: #565D66;
+    --gray-500: #7A828C;
+    --gray-400: #A6ACB4;
+    --gray-300: #C9CDD3;
+    --gray-200: #E2E5E9;
+    --gray-100: #EEF0F3;
+    --gray-50:  #F5F7F9;
+
+    --blue: #1F3DF0;
+    --blue-deep: #1832C4;
+    --blue-tint: #EEF1FD;
+    --blue-line: #C9D2FB;
+
+    --green: #0F7B4D;
+    --amber: #9A6A00;
+
+    --bg-page: var(--paper);
+    --surface-card: var(--card);
+    --surface-sunken: var(--paper-2);
+    --text-primary: var(--ink);
+    --text-secondary: var(--gray-600);
+    --text-tertiary: var(--gray-500);
+    --text-on-dark: var(--paper);
+    --line: var(--gray-200);
+    --line-soft: var(--gray-100);
+    --accent: var(--blue);
+
+    /* ---- Type tokens (Archivo + Fragment Mono) ---- */
+    --font-sans: "Archivo", -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+    --font-mono: "Fragment Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+    --display-1-track: -0.035em;
+    --h1-track: -0.025em;
+    --h3-track: -0.02em;
+
+    --display-1: 700 82px/1.02 var(--font-sans);
+    --heading-1: 600 44px/1.1 var(--font-sans);
+    --heading-3: 600 22px/1.2 var(--font-sans);
+    --body-lg: 400 19px/1.55 var(--font-sans);
+    --body: 400 16px/1.6 var(--font-sans);
+    --body-sm: 400 14.5px/1.55 var(--font-sans);
+    --caption: 400 13px/1.5 var(--font-sans);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+
+  /* ---- Hover / active states (converted from design-doc directives) ---- */
+  .hover-ink:hover { color: var(--ink) !important; }
+  .hover-blue:hover { color: var(--blue) !important; }
+  .btn-dark:hover { background: var(--blue) !important; }
+  .btn-dark:active { transform: translateY(1px); }
+  .card-hover:hover { border-color: var(--gray-400) !important; }
+  .ulink:hover { text-decoration: underline !important; }
+  .faq-btn:hover { color: var(--blue) !important; }
+  /* Previously-At logos: grayscale by default, brand color on hover */
+  .plogo { filter: grayscale(1); opacity: 0.8; transition: filter 0.35s ease, opacity 0.35s ease; }
+  .plogo:hover { filter: grayscale(0); opacity: 1; }
+
+  /* ---- Hover-reactive grid canvas (full-viewport background) ---- */
+  #grid-canvas { position: fixed; inset: 0; width: 100vw; height: 100vh; z-index: 0; pointer-events: none; }
+  /* Frosted-glass layer over the grid: softens it without blocking the hover physics (pointer-events: none; grid listens on window) */
+  #grid-frost { position: fixed; inset: 0; z-index: 1; pointer-events: none; background: rgba(250, 251, 252, 0.1); backdrop-filter: blur(3px); -webkit-backdrop-filter: blur(3px); }
+  #page { position: relative; z-index: 2; }
+
+  /* ---- Motion keyframes (Direction 1B) ---- */
+  @keyframes caretBlink { 0%, 50% { opacity: 1; } 50.01%, 100% { opacity: 0; } }
+  @keyframes tcGray { 0% { transform: scaleX(0); } 86% { transform: scaleX(0.92); } 93% { transform: scaleX(0.92); } 100% { transform: scaleX(0); } }
+  @keyframes tcBlue { 0% { transform: scaleX(0); } 26% { transform: scaleX(1); } 93% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+  @keyframes tcReclaim { 0%, 28% { transform: scaleX(0); } 44% { transform: scaleX(1); } 93% { transform: scaleX(1); } 100% { transform: scaleX(0); } }
+  @keyframes tcLabel { 0%, 44% { opacity: 0; } 45% { opacity: 1; } 93% { opacity: 1; } 100% { opacity: 0; } }
+  @keyframes fitDrop { 0% { transform: translateY(-48px); opacity: 0; } 10% { opacity: 1; } 30% { transform: translateY(0); } 86% { transform: translateY(0); opacity: 1; } 93% { transform: translateY(0); opacity: 0; } 100% { transform: translateY(-48px); opacity: 0; } }
+  @keyframes fitFrame { 0%, 28% { border-color: var(--gray-400); background: transparent; } 36% { border-color: var(--blue); background: var(--blue-tint); } 86% { border-color: var(--blue); background: var(--blue-tint); } 94%, 100% { border-color: var(--gray-400); background: transparent; } }
+  @keyframes coinIn1 { 0%, 6% { opacity: 0; transform: translateY(-42px); } 10% { opacity: 1; } 16% { transform: translateY(0); } 88% { transform: translateY(0); opacity: 1; } 94%, 100% { opacity: 0; transform: translateY(0); } }
+  @keyframes coinIn2 { 0%, 16% { opacity: 0; transform: translateY(-42px); } 20% { opacity: 1; } 26% { transform: translateY(0); } 88% { transform: translateY(0); opacity: 1; } 94%, 100% { opacity: 0; transform: translateY(0); } }
+  @keyframes coinIn3 { 0%, 26% { opacity: 0; transform: translateY(-42px); } 30% { opacity: 1; } 36% { transform: translateY(0); } 88% { transform: translateY(0); opacity: 1; } 94%, 100% { opacity: 0; transform: translateY(0); } }
+  @keyframes coinIn4 { 0%, 36% { opacity: 0; transform: translateY(-42px); } 40% { opacity: 1; } 46% { transform: translateY(0); } 88% { transform: translateY(0); opacity: 1; } 94%, 100% { opacity: 0; transform: translateY(0); } }
+  @keyframes coinIn5 { 0%, 46% { opacity: 0; transform: translateY(-42px); } 50% { opacity: 1; } 56% { transform: translateY(0); } 88% { transform: translateY(0); opacity: 1; } 94%, 100% { opacity: 0; transform: translateY(0); } }
+  @keyframes sweep { 0% { transform: rotate(-56deg); } 55% { transform: rotate(34deg); } 70% { transform: rotate(26deg); } 100% { transform: rotate(-56deg); } }
+  @keyframes talkIn { 0%, 18% { opacity: 0; transform: translateY(12px) scale(0.94); } 30% { opacity: 1; transform: translateY(0) scale(1); } 90% { opacity: 1; } 97%, 100% { opacity: 0; transform: translateY(0) scale(1); } }
+  @keyframes mapMove { 0% { offset-distance: 0%; opacity: 0; } 7% { opacity: 1; } 80% { offset-distance: 100%; opacity: 1; } 88% { opacity: 0; } 100% { offset-distance: 100%; opacity: 0; } }
+  @keyframes decideCheck { 0%, 34% { stroke-dashoffset: 40; opacity: 0; } 44% { opacity: 1; } 58% { stroke-dashoffset: 0; opacity: 1; } 92% { stroke-dashoffset: 0; opacity: 1; } 98%, 100% { stroke-dashoffset: 0; opacity: 0; } }
+
+  /* ---- Responsive ---- */
+  @media (max-width: 1024px) {
+    .site-nav, .hero, .sec, .sec-inner, .site-footer { padding-left: 32px !important; padding-right: 32px !important; }
+    .nav-links { gap: 22px !important; }
+    .hero { gap: 48px !important; }
+    :root { --display-1: 700 60px/1.05 var(--font-sans); }
+  }
+  @media (max-width: 980px) {
+    .panel-row { flex-direction: column !important; }
+    .panel-row > [data-panel] { flex: none !important; width: 100%; height: 300px !important; opacity: 1 !important; filter: none !important; border-color: var(--line) !important; }
+    .panel-row [data-fade] { opacity: 1 !important; display: block !important; }
+  }
+  @media (max-width: 920px) {
+    .nav-links > a:not(.btn-dark) { display: none !important; }
+    .hero { flex-direction: column !important; align-items: flex-start !important; padding-top: 64px !important; }
+    .hero-fig { width: 100% !important; max-width: 520px; }
+    :root { --display-1: 700 clamp(40px, 8vw, 58px)/1.05 var(--font-sans); --heading-1: 600 clamp(30px, 5.5vw, 40px)/1.12 var(--font-sans); }
+    .grid-3 { grid-template-columns: 1fr !important; }
+    .about-grid { grid-template-columns: 1fr !important; gap: 28px !important; }
+    .prev-strip { gap: 20px 24px !important; margin-top: 40px !important; }
+    .faq-card { grid-template-columns: 1fr !important; }
+    .faq-card > div:first-child { padding: 48px 40px 8px !important; }
+    .contact-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+    .site-footer { flex-direction: column !important; align-items: flex-start !important; gap: 24px !important; }
+    .foot-links { flex-wrap: wrap !important; row-gap: 14px !important; }
+  }
+  @media (max-width: 640px) {
+    .site-nav, .hero, .sec, .sec-inner, .site-footer { padding-left: 20px !important; padding-right: 20px !important; }
+    .site-nav a.brand > span:last-child > span { display: none !important; }
+    .hero { padding-top: 56px !important; padding-bottom: 56px !important; gap: 36px !important; }
+    .sec { padding-top: 64px !important; padding-bottom: 64px !important; }
+    .faq-card > div:last-child { padding: 20px 24px !important; }
+    .about-card { padding: 32px 24px 36px !important; }
+    .three-words { font-size: 20px !important; }
+  }
+  @media (max-width: 480px) {
+    .hero-fig { display: none !important; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #page * { animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<canvas id="grid-canvas" aria-hidden="true"></canvas>
+<div id="grid-frost" aria-hidden="true"></div>
+
+<div id="page">
+
+  <!-- Nav -->
+  <nav class="site-nav" style="position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; height: 76px; padding: 0 56px; background: rgba(250, 251, 252, 0.82); backdrop-filter: blur(12px);">
+    <a href="#top" class="brand" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink);">
+      <span style="width: 34px; height: 34px; border: 1px solid var(--ink); display: grid; place-items: center; font: 400 13px var(--font-mono); letter-spacing: 0.04em;">MZ</span>
+      <span style="font: 600 16px/1.2 var(--font-sans); letter-spacing: -0.01em;">Muhammad Zeeshan<span style="display: block; font: 400 11px/1.4 var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary); margin-top: 3px;">AI SYSTEMS CONSULTING · DUBAI</span></span>
+    </a>
+    <div class="nav-links" style="display: flex; align-items: center; gap: 30px;">
+      <a href="#b-call" class="hover-ink" style="font: 500 14px/1 var(--font-sans); color: var(--text-secondary); text-decoration: none;">What You Get</a>
+      <a href="#b-how" class="hover-ink" style="font: 500 14px/1 var(--font-sans); color: var(--text-secondary); text-decoration: none;">How It Works</a>
+      <a href="#b-about" class="hover-ink" style="font: 500 14px/1 var(--font-sans); color: var(--text-secondary); text-decoration: none;">Who's Behind It</a>
+      <a href="#b-faq" class="hover-ink" style="font: 500 14px/1 var(--font-sans); color: var(--text-secondary); text-decoration: none;">FAQ</a>
+      <a href="#b-contact" class="btn-dark" style="display: inline-flex; align-items: center; height: 36px; padding: 0 16px; background: var(--ink); color: var(--paper); font: 500 13.5px/1 var(--font-sans); border-radius: 2px; text-decoration: none;">Book A Discovery Call</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="top" class="hero" style="display: flex; gap: 64px; align-items: center; padding: 88px 56px 84px; max-width: 1280px; margin: 0 auto;">
+    <div style="flex: 1;">
+      <div style="display: flex; align-items: center; gap: 10px; font: 400 12px/1.4 var(--font-mono); letter-spacing: 0.14em; color: var(--text-secondary); text-transform: uppercase;"><span style="width: 24px; height: 1px; background: var(--blue);"></span>Start With One Conversation</div>
+      <h1 style="font: var(--display-1); letter-spacing: var(--display-1-track); margin: 28px 0 0;">You know AI matters.<br>One call shows<br><span data-typewrap style="display: inline-block; color: var(--green); font-style: normal;"><span data-type>where.</span><span aria-hidden="true" style="display: inline-block; width: 4px; height: 0.78em; background: currentColor; margin-left: 8px; vertical-align: -0.02em; border-radius: 1px; animation: caretBlink 1.05s steps(1, end) infinite;"></span></span></h1>
+      <p style="font: var(--body-lg); color: var(--text-secondary); max-width: 520px; margin: 28px 0 0;">Thirty minutes on how the work runs today: where AI fits, what it is worth, and whether it is worth doing. No deck, no obligation.</p>
+      <div style="display: flex; align-items: center; gap: 24px; margin-top: 40px;">
+        <a href="#b-contact" class="btn-dark" style="display: inline-flex; align-items: center; height: 46px; padding: 0 24px; background: var(--ink); color: var(--paper); font: 500 15px/1 var(--font-sans); border-radius: 2px; text-decoration: none;">Book A Discovery Call</a>
+      </div>
+    </div>
+    <div class="hero-fig" style="position: relative; width: 520px; height: 470px; flex: none; border: 1px solid var(--line); background: var(--card); overflow: hidden;">
+      <span style="position: absolute; top: 21px; left: 15px; width: 13px; height: 1px; background: var(--ink);"></span>
+      <span style="position: absolute; top: 15px; left: 21px; width: 1px; height: 13px; background: var(--ink);"></span>
+      <span style="position: absolute; top: 18px; right: 24px; font: 400 11px var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary);">FIG. 01</span>
+      <span style="position: absolute; top: 40px; left: 50%; transform: translateX(-50%); padding: 7px 12px; border: 1px solid var(--ink); background: var(--card); font: 400 10px var(--font-mono); letter-spacing: 0.12em; color: var(--ink); white-space: nowrap;">THE HOURS A TASK TAKES</span>
+      <span style="position: absolute; left: 58px; top: 150px; width: 1px; height: 210px; background: var(--gray-300);"></span>
+      <span style="position: absolute; left: 44px; top: 132px; font: 400 9px var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary);">START</span>
+      <span style="position: absolute; left: 60px; top: 190px; font: 400 10px var(--font-mono); letter-spacing: 0.12em; color: var(--gray-700);">TODAY</span>
+      <span style="position: absolute; left: 60px; top: 212px; width: 410px; height: 8px; background: var(--gray-100); overflow: hidden;"><span style="position: absolute; inset: 0; background: var(--gray-400); transform-origin: left; animation: tcGray 6.5s linear infinite;"></span></span>
+      <span style="position: absolute; left: 60px; top: 288px; font: 400 10px var(--font-mono); letter-spacing: 0.12em; color: var(--blue-deep);">WITH AI</span>
+      <span style="position: absolute; left: 60px; top: 310px; width: 164px; height: 8px; background: var(--blue-tint); overflow: hidden;"><span style="position: absolute; inset: 0; background: var(--blue); transform-origin: left; animation: tcBlue 6.5s cubic-bezier(0.2, 0, 0, 1) infinite;"></span></span>
+      <span style="position: absolute; left: 224px; top: 300px; width: 1px; height: 28px; background: repeating-linear-gradient(var(--ink) 0 4px, transparent 4px 8px);"></span>
+      <span style="position: absolute; left: 226px; top: 302px; width: 244px; height: 24px; border: 1px solid var(--blue); background: var(--blue-tint); box-sizing: border-box; transform-origin: left; animation: tcReclaim 6.5s cubic-bezier(0.2, 0, 0, 1) infinite; display: flex; align-items: center; padding: 0 10px;"><span style="font: 400 9px var(--font-mono); letter-spacing: 0.08em; color: var(--blue-deep); white-space: nowrap; animation: tcLabel 6.5s linear infinite;">TIME RECLAIMED FOR HIGH-VALUE WORK</span></span>
+      <span style="position: absolute; bottom: 22px; left: 24px; font: 400 11px var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary);">AI FINISHES EARLY · TIME COMES BACK</span>
+      <span style="position: absolute; bottom: 21px; right: 15px; width: 13px; height: 1px; background: var(--ink);"></span>
+      <span style="position: absolute; bottom: 15px; right: 21px; width: 1px; height: 13px; background: var(--ink);"></span>
+    </div>
+  </header>
+
+  <!-- One call, three answers -->
+  <section id="b-call" class="sec" style="padding: 96px 56px; max-width: 1280px; margin: 0 auto;">
+    <div style="display: flex; align-items: center; gap: 10px; font: 400 12px/1.4 var(--font-mono); letter-spacing: 0.14em; color: var(--text-secondary); text-transform: uppercase;"><span style="width: 24px; height: 1px; background: var(--blue);"></span>What You Get</div>
+    <h2 style="font: var(--heading-1); letter-spacing: var(--h1-track); margin: 20px 0 0;">One call. Three answers.</h2>
+    <div class="three-words" style="font: 600 26px/1.3 var(--font-sans); letter-spacing: -0.015em; color: var(--ink); margin-top: 26px;">Thirty minutes<span style="color: var(--blue);">.</span>&nbsp; No preparation<span style="color: var(--blue);">.</span>&nbsp; No deck<span style="color: var(--blue);">.</span></div>
+    <div class="grid-3" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 48px;">
+      <div class="card-hover" style="background: var(--card); border: 1px solid var(--line); border-radius: 2px; overflow: hidden;">
+        <div style="position: relative; height: 170px; border-bottom: 1px solid var(--line-soft); background: var(--card); display: flex; align-items: center; justify-content: center; gap: 10px;">
+          <span style="width: 44px; height: 44px; border: 1px solid var(--ink); background: var(--card); display: grid; place-items: center; flex: none;"><span style="display: grid; gap: 5px;"><span style="width: 22px; height: 3px; background: var(--gray-300);"></span><span style="width: 14px; height: 3px; background: var(--gray-300);"></span></span></span>
+          <span style="width: 12px; height: 1px; background: var(--gray-400); flex: none;"></span>
+          <span style="width: 44px; height: 44px; border: 1px solid var(--ink); background: var(--card); display: grid; place-items: center; flex: none;"><span style="display: grid; gap: 5px;"><span style="width: 22px; height: 3px; background: var(--gray-300);"></span><span style="width: 14px; height: 3px; background: var(--gray-300);"></span></span></span>
+          <span style="width: 12px; height: 1px; background: var(--gray-400); flex: none;"></span>
+          <span style="position: relative; width: 52px; height: 52px; border: 1px dashed var(--gray-400); animation: fitFrame 5.5s ease-out infinite; flex: none;"><span style="position: absolute; inset: 4px; background: var(--blue-tint); border: 1px solid var(--blue); display: grid; place-items: center; font: 400 10px var(--font-mono); letter-spacing: 0.08em; color: var(--blue-deep); animation: fitDrop 5.5s ease-out infinite;">AI</span></span>
+          <span style="width: 12px; height: 1px; background: var(--gray-400); flex: none;"></span>
+          <span style="width: 44px; height: 44px; border: 1px solid var(--ink); background: var(--card); display: grid; place-items: center; flex: none;"><span style="display: grid; gap: 5px;"><span style="width: 22px; height: 3px; background: var(--gray-300);"></span><span style="width: 14px; height: 3px; background: var(--gray-300);"></span></span></span>
+        </div>
+        <div style="padding: 22px 24px 26px;">
+          <div style="font: 400 13px var(--font-mono); letter-spacing: 0.14em; color: var(--blue);">01</div>
+          <div style="font: 600 38px/1.08 var(--font-sans); letter-spacing: -0.025em; margin: 14px 0 12px;">Where AI fits.</div>
+          <p style="font: var(--body); color: var(--text-secondary); margin: 0;">The processes where it earns its place, and the ones where it does not.</p>
+        </div>
+      </div>
+      <div class="card-hover" style="background: var(--card); border: 1px solid var(--line); border-radius: 2px; overflow: hidden;">
+        <div style="position: relative; height: 170px; border-bottom: 1px solid var(--line-soft); background: var(--card); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 34px;">
+          <span style="position: absolute; bottom: 26px; left: 90px; right: 90px; height: 1px; background: var(--gray-400);"></span>
+          <span style="position: relative; width: 64px; height: 76px; display: block;">
+            <span style="position: absolute; bottom: 0; left: 0; width: 64px; height: 15px; border: 1px solid var(--ink); border-radius: 7px; background: var(--card); animation: coinIn1 7s linear infinite;"></span>
+            <span style="position: absolute; bottom: 13px; left: 0; width: 64px; height: 15px; border: 1px solid var(--ink); border-radius: 7px; background: var(--card); animation: coinIn2 7s linear infinite;"></span>
+            <span style="position: absolute; bottom: 26px; left: 0; width: 64px; height: 15px; border: 1px solid var(--ink); border-radius: 7px; background: var(--card); animation: coinIn3 7s linear infinite;"></span>
+            <span style="position: absolute; bottom: 39px; left: 0; width: 64px; height: 15px; border: 1px solid var(--ink); border-radius: 7px; background: var(--card); animation: coinIn4 7s linear infinite;"></span>
+            <span style="position: absolute; bottom: 52px; left: 0; width: 64px; height: 15px; border: 1px solid var(--blue); border-radius: 7px; background: var(--blue-tint); animation: coinIn5 7s linear infinite;"></span>
+          </span>
+          <span style="position: absolute; bottom: 12px; left: 0; right: 0; text-align: center; font: 400 9px var(--font-mono); letter-spacing: 0.12em; color: var(--text-tertiary);">THE COST, COUNTED FIRST</span>
+        </div>
+        <div style="padding: 22px 24px 26px;">
+          <div style="font: 400 13px var(--font-mono); letter-spacing: 0.14em; color: var(--blue);">02</div>
+          <div style="font: 600 38px/1.08 var(--font-sans); letter-spacing: -0.025em; margin: 14px 0 12px;">What it is worth.</div>
+          <p style="font: var(--body); color: var(--text-secondary); margin: 0;">The hours and the cost. A number, not a hunch.</p>
+        </div>
+      </div>
+      <div class="card-hover" style="background: var(--card); border: 1px solid var(--line); border-radius: 2px; overflow: hidden;">
+        <div style="position: relative; height: 170px; border-bottom: 1px solid var(--line-soft); background: var(--card); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 48px;">
+          <span style="position: absolute; bottom: 48px; left: 70px; right: 70px; height: 1px; background: var(--gray-400);"></span>
+          <span style="position: relative; width: 150px; height: 75px; border: 1px solid var(--ink); border-bottom: none; border-radius: 150px 150px 0 0; display: block;">
+            <span style="position: absolute; top: 6px; left: 50%; width: 1px; height: 7px; background: var(--gray-400);"></span>
+            <span style="position: absolute; left: 50%; bottom: 0; width: 1.5px; height: 56px; background: var(--blue); transform-origin: bottom; animation: sweep 5.6s ease-in-out infinite;"></span>
+            <span style="position: absolute; left: 50%; bottom: -4px; width: 8px; height: 8px; margin-left: -4px; border-radius: 50%; background: var(--ink);"></span>
+          </span>
+          <span style="position: absolute; bottom: 26px; left: 56px; font: 400 9px var(--font-mono); letter-spacing: 0.12em; color: var(--text-tertiary);">NOT YET</span>
+          <span style="position: absolute; bottom: 26px; right: 50px; font: 400 9px var(--font-mono); letter-spacing: 0.12em; color: var(--text-tertiary);">WORTH IT</span>
+        </div>
+        <div style="padding: 22px 24px 26px;">
+          <div style="font: 400 13px var(--font-mono); letter-spacing: 0.14em; color: var(--blue);">03</div>
+          <div style="font: 600 38px/1.08 var(--font-sans); letter-spacing: -0.025em; margin: 14px 0 12px;">Whether it is worth doing.</div>
+          <p style="font: var(--body); color: var(--text-secondary); margin: 0;">An honest read, including not yet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section id="b-how" style="padding: 96px 0;">
+    <div class="sec-inner" style="max-width: 1280px; margin: 0 auto; padding: 0 56px;">
+      <div style="display: flex; align-items: center; gap: 10px; font: 400 12px/1.4 var(--font-mono); letter-spacing: 0.14em; color: var(--text-secondary); text-transform: uppercase;"><span style="width: 24px; height: 1px; background: var(--blue);"></span>How It Works</div>
+      <div class="panel-row" data-panel-row style="display: flex; align-items: stretch; gap: 12px; margin-top: 44px;">
+
+        <!-- Card: Talk -->
+        <div data-panel="0" style="position: relative; flex: 3.2 1 0; min-width: 0; height: 384px; border: 1px solid var(--blue); border-radius: 2px; overflow: hidden; background: var(--card); opacity: 1; transition: flex-grow 0.55s cubic-bezier(0.4, 0, 0.1, 1), filter 0.55s ease, opacity 0.55s ease, border-color 0.35s ease;">
+          <span style="position: absolute; top: 21px; left: 15px; width: 13px; height: 1px; background: var(--ink);"></span>
+          <span style="position: absolute; top: 15px; left: 21px; width: 1px; height: 13px; background: var(--ink);"></span>
+          <span style="position: absolute; top: 18px; right: 20px; font: 400 11px var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary);">FIG. 02</span>
+          <div style="position: absolute; top: 40px; left: 28px; width: 660px; height: 200px;">
+            <svg viewBox="0 0 660 200" width="660" height="200" fill="none" style="overflow: visible;">
+              <path d="M28 74 L20 92 L44 74 Z" style="fill: var(--card); stroke: var(--gray-400);" stroke-width="1.4" stroke-linejoin="round"></path>
+              <rect x="6" y="10" width="200" height="64" rx="10" style="fill: var(--card); stroke: var(--gray-400);" stroke-width="1.4"></rect>
+              <line x1="24" y1="30" x2="182" y2="30" style="stroke: var(--gray-300);" stroke-width="3"></line>
+              <line x1="24" y1="44" x2="150" y2="44" style="stroke: var(--gray-300);" stroke-width="3"></line>
+              <line x1="24" y1="58" x2="168" y2="58" style="stroke: var(--gray-300);" stroke-width="3"></line>
+              <line x1="360" y1="104" x2="486" y2="80" style="stroke: var(--gray-300);" stroke-width="1" stroke-dasharray="4 5"></line>
+              <g style="animation: talkIn 6.5s ease-out infinite; transform-box: fill-box; transform-origin: 50% 50%;">
+                <path d="M330 128 L340 146 L316 128 Z" style="fill: var(--blue-tint); stroke: var(--blue);" stroke-width="1.4" stroke-linejoin="round"></path>
+                <rect x="150" y="86" width="204" height="44" rx="10" style="fill: var(--blue-tint); stroke: var(--blue);" stroke-width="1.4"></rect>
+                <line x1="168" y1="102" x2="322" y2="102" style="stroke: var(--blue-line);" stroke-width="3"></line>
+                <line x1="168" y1="116" x2="288" y2="116" style="stroke: var(--blue-line);" stroke-width="3"></line>
+              </g>
+              <path d="M46 176 L38 192 L60 176 Z" style="fill: var(--card); stroke: var(--gray-400);" stroke-width="1.3" stroke-linejoin="round"></path>
+              <rect x="28" y="146" width="118" height="34" rx="9" style="fill: var(--card); stroke: var(--gray-400);" stroke-width="1.3"></rect>
+              <circle cx="56" cy="163" r="3.4" style="fill: var(--gray-400);"></circle>
+              <circle cx="72" cy="163" r="3.4" style="fill: var(--gray-400);"></circle>
+              <circle cx="88" cy="163" r="3.4" style="fill: var(--gray-400);"></circle>
+              <circle cx="558" cy="78" r="46" style="fill: var(--card); stroke: var(--ink);" stroke-width="1.5"></circle>
+              <line x1="558" y1="38" x2="558" y2="46" style="stroke: var(--gray-500);" stroke-width="1.5"></line>
+              <line x1="558" y1="110" x2="558" y2="118" style="stroke: var(--gray-500);" stroke-width="1.5"></line>
+              <line x1="518" y1="78" x2="526" y2="78" style="stroke: var(--gray-500);" stroke-width="1.5"></line>
+              <line x1="590" y1="78" x2="598" y2="78" style="stroke: var(--gray-500);" stroke-width="1.5"></line>
+              <line x1="558" y1="78" x2="558" y2="50" style="stroke: var(--blue);" stroke-width="2" stroke-linecap="round"></line>
+              <line x1="558" y1="78" x2="584" y2="88" style="stroke: var(--ink);" stroke-width="2" stroke-linecap="round"></line>
+              <circle cx="558" cy="78" r="3.5" style="fill: var(--ink);"></circle>
+              <text x="558" y="150" text-anchor="middle" style="fill: var(--text-tertiary); font: 400 11px var(--font-mono); letter-spacing: 0.14em;">30 MIN</text>
+            </svg>
+          </div>
+          <span style="position: absolute; left: 0; right: 0; bottom: 0; height: 176px; background: linear-gradient(180deg, transparent 0%, var(--card) 58%); pointer-events: none;"></span>
+          <div style="position: absolute; left: 26px; right: 26px; bottom: 28px;">
+            <div data-fade style="font: 400 11px var(--font-mono); letter-spacing: 0.12em; color: var(--blue); opacity: 1; transition: opacity 0.4s ease;">STEP ONE</div>
+            <div style="font: 700 46px/1.0 var(--font-sans); letter-spacing: -0.028em; margin-top: 10px; white-space: nowrap;">Talk<span style="color: var(--blue);">.</span></div>
+            <p data-fade style="font: var(--body-sm); color: var(--text-secondary); margin: 12px 0 0; max-width: 300px; opacity: 1; transition: opacity 0.4s ease;">A 30-minute call about how one process runs today. Nothing to prepare.</p>
+          </div>
+        </div>
+
+        <!-- Card: Map -->
+        <div data-panel="1" style="position: relative; flex: 0.9 1 0; min-width: 0; height: 384px; border: 1px solid var(--line); border-radius: 2px; overflow: hidden; background: var(--card); filter: grayscale(1); opacity: 0.5; transition: flex-grow 0.55s cubic-bezier(0.4, 0, 0.1, 1), filter 0.55s ease, opacity 0.55s ease, border-color 0.35s ease;">
+          <span style="position: absolute; top: 21px; left: 15px; width: 13px; height: 1px; background: var(--ink);"></span>
+          <span style="position: absolute; top: 15px; left: 21px; width: 1px; height: 13px; background: var(--ink);"></span>
+          <span style="position: absolute; top: 18px; right: 20px; font: 400 11px var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary);">FIG. 03</span>
+          <div style="position: absolute; top: 40px; left: 28px; width: 660px; height: 200px;">
+            <svg viewBox="0 0 660 200" width="660" height="200" fill="none" style="overflow: visible;">
+              <line x1="20" y1="182" x2="640" y2="182" style="stroke: var(--gray-300);" stroke-width="1"></line>
+              <line x1="150" y1="64" x2="390" y2="58" style="stroke: var(--gray-300);" stroke-width="1" stroke-dasharray="4 6"></line>
+              <line x1="270" y1="120" x2="510" y2="128" style="stroke: var(--gray-300);" stroke-width="1" stroke-dasharray="4 6"></line>
+              <line x1="36" y1="150" x2="270" y2="120" style="stroke: var(--gray-300);" stroke-width="1"></line>
+              <path d="M36 150 L150 64 L270 120 L390 58 L510 128 L620 60" style="stroke: var(--blue);" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+              <rect x="144" y="58" width="12" height="12" style="fill: var(--card); stroke: var(--gray-500);" stroke-width="1.4"></rect>
+              <rect x="384" y="52" width="12" height="12" style="fill: var(--card); stroke: var(--gray-500);" stroke-width="1.4"></rect>
+              <circle cx="36" cy="150" r="5.5" style="fill: var(--card); stroke: var(--ink);" stroke-width="1.5"></circle>
+              <circle cx="270" cy="120" r="4.2" style="fill: var(--card); stroke: var(--gray-500);" stroke-width="1.4"></circle>
+              <circle cx="510" cy="128" r="4.2" style="fill: var(--card); stroke: var(--gray-500);" stroke-width="1.4"></circle>
+              <line x1="620" y1="60" x2="620" y2="24" style="stroke: var(--ink);" stroke-width="1.5"></line>
+              <path d="M620 26 L648 34 L620 44 Z" style="fill: var(--blue-tint); stroke: var(--blue);" stroke-width="1.4" stroke-linejoin="round"></path>
+              <circle cx="620" cy="60" r="5" style="fill: var(--blue);"></circle>
+            </svg>
+            <span style="position: absolute; left: 0; top: 0; width: 9px; height: 9px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 0 3px var(--blue-tint); offset-path: path('M36 150 L150 64 L270 120 L390 58 L510 128 L620 60'); offset-anchor: 50% 50%; animation: mapMove 6s cubic-bezier(0.45, 0, 0.15, 1) infinite;"></span>
+          </div>
+          <span style="position: absolute; left: 0; right: 0; bottom: 0; height: 176px; background: linear-gradient(180deg, transparent 0%, var(--card) 58%); pointer-events: none;"></span>
+          <div style="position: absolute; left: 26px; right: 26px; bottom: 28px;">
+            <div data-fade style="font: 400 11px var(--font-mono); letter-spacing: 0.12em; color: var(--blue); opacity: 0; display: none; transition: opacity 0.4s ease;">STEP TWO</div>
+            <div style="font: 700 46px/1.0 var(--font-sans); letter-spacing: -0.028em; margin-top: 10px; white-space: nowrap;">Map<span style="color: var(--blue);">.</span></div>
+            <p data-fade style="font: var(--body-sm); color: var(--text-secondary); margin: 12px 0 0; max-width: 300px; opacity: 0; display: none; transition: opacity 0.4s ease;">A two-week audit of the three heaviest processes — the hours, the cost, a plan. Yours to keep.</p>
+          </div>
+        </div>
+
+        <!-- Card: Decide -->
+        <div data-panel="2" style="position: relative; flex: 0.9 1 0; min-width: 0; height: 384px; border: 1px solid var(--line); border-radius: 2px; overflow: hidden; background: var(--card); filter: grayscale(1); opacity: 0.5; transition: flex-grow 0.55s cubic-bezier(0.4, 0, 0.1, 1), filter 0.55s ease, opacity 0.55s ease, border-color 0.35s ease;">
+          <span style="position: absolute; top: 21px; left: 15px; width: 13px; height: 1px; background: var(--ink);"></span>
+          <span style="position: absolute; top: 15px; left: 21px; width: 1px; height: 13px; background: var(--ink);"></span>
+          <span style="position: absolute; top: 18px; right: 20px; font: 400 11px var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary);">FIG. 04</span>
+          <div style="position: absolute; top: 40px; left: 28px; width: 660px; height: 200px;">
+            <svg viewBox="0 0 660 200" width="660" height="200" fill="none" style="overflow: visible;">
+              <path d="M18 100 L132 100" style="stroke: var(--ink);" stroke-width="1.6" stroke-linecap="round"></path>
+              <rect x="133" y="85" width="30" height="30" rx="3" transform="rotate(45 148 100)" style="fill: var(--card); stroke: var(--ink);" stroke-width="1.5"></rect>
+              <path d="M170 100 C260 100 300 40 424 40" style="stroke: var(--blue);" stroke-width="1.8" fill="none"></path>
+              <path d="M170 100 C300 100 320 100 424 100" style="stroke: var(--gray-400);" stroke-width="1.5" fill="none"></path>
+              <path d="M170 100 C260 100 300 160 424 160" style="stroke: var(--gray-400);" stroke-width="1.5" stroke-dasharray="5 6" fill="none"></path>
+              <rect x="424" y="18" width="196" height="44" rx="5" style="fill: var(--blue-tint); stroke: var(--blue);" stroke-width="1.5"></rect>
+              <path d="M440 40 l8 8 l14 -16" style="stroke: var(--blue); stroke-dasharray: 40; stroke-dashoffset: 0; animation: decideCheck 5.5s ease-in-out infinite;" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"></path>
+              <line x1="474" y1="34" x2="600" y2="34" style="stroke: var(--blue-line);" stroke-width="3"></line>
+              <line x1="474" y1="46" x2="566" y2="46" style="stroke: var(--blue-line);" stroke-width="3"></line>
+              <rect x="424" y="78" width="196" height="44" rx="5" style="fill: var(--card); stroke: var(--gray-400);" stroke-width="1.4"></rect>
+              <circle cx="446" cy="100" r="7" style="fill: var(--card); stroke: var(--gray-400);" stroke-width="1.4"></circle>
+              <line x1="466" y1="94" x2="600" y2="94" style="stroke: var(--gray-300);" stroke-width="3"></line>
+              <line x1="466" y1="106" x2="560" y2="106" style="stroke: var(--gray-300);" stroke-width="3"></line>
+              <rect x="424" y="138" width="196" height="44" rx="5" style="fill: var(--card); stroke: var(--gray-400);" stroke-width="1.4" stroke-dasharray="5 5"></rect>
+              <line x1="446" y1="154" x2="596" y2="154" style="stroke: var(--gray-300);" stroke-width="3"></line>
+              <line x1="446" y1="166" x2="556" y2="166" style="stroke: var(--gray-300);" stroke-width="3"></line>
+              <circle cx="170" cy="100" r="4.5" style="fill: var(--card); stroke: var(--ink);" stroke-width="1.5"></circle>
+            </svg>
+          </div>
+          <span style="position: absolute; left: 0; right: 0; bottom: 0; height: 176px; background: linear-gradient(180deg, transparent 0%, var(--card) 58%); pointer-events: none;"></span>
+          <div style="position: absolute; left: 26px; right: 26px; bottom: 28px;">
+            <div data-fade style="font: 400 11px var(--font-mono); letter-spacing: 0.12em; color: var(--blue); opacity: 0; display: none; transition: opacity 0.4s ease;">STEP THREE</div>
+            <div style="font: 700 46px/1.0 var(--font-sans); letter-spacing: -0.028em; margin-top: 10px; color: var(--blue); white-space: nowrap;">Decide<span style="color: var(--blue);">.</span></div>
+            <p data-fade style="font: var(--body-sm); color: var(--text-secondary); margin: 12px 0 0; max-width: 300px; opacity: 0; display: none; transition: opacity 0.4s ease;">Build together, build alone, or wait. The plan does not expire.</p>
+          </div>
+        </div>
+
+      </div>
+      <div style="font: var(--caption); color: var(--text-tertiary); margin-top: 48px;">* Nothing is scoped, and nothing is sold, before the call.</div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="b-about" class="sec" style="padding: 96px 56px; max-width: 1280px; margin: 0 auto;">
+    <div class="about-card" style="background: var(--card); border: 1px solid var(--line); border-radius: 2px; box-shadow: 0 24px 60px rgba(12, 14, 17, 0.06); padding: 56px 56px 60px;">
+    <div style="display: flex; align-items: center; gap: 10px; font: 400 12px/1.4 var(--font-mono); letter-spacing: 0.14em; color: var(--text-secondary); text-transform: uppercase;"><span style="width: 24px; height: 1px; background: var(--blue);"></span>Who's Behind It</div>
+    <div class="about-grid" style="display: grid; grid-template-columns: 220px 1fr; gap: 56px; margin-top: 36px; align-items: start;">
+      <div>
+        <div style="position: relative; width: 220px; height: 220px; border-radius: 2px; overflow: hidden; background: var(--ink); display: grid; place-items: center;">
+          <span style="font: 400 44px var(--font-mono); color: var(--paper); letter-spacing: 0.04em;">MZ</span>
+          <img src="muhammad-zeeshan.png" alt="Muhammad Zeeshan" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" onerror="this.remove()">
+        </div>
+        <div style="font: 600 16px/1.2 var(--font-sans); letter-spacing: -0.01em; margin-top: 16px;">Muhammad Zeeshan</div>
+        <div style="font: 400 10.5px var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary); text-transform: uppercase; margin-top: 6px;">AI Systems Consultant · Dubai</div>
+      </div>
+      <div class="about-main">
+        <h2 style="font: var(--heading-1); letter-spacing: var(--h1-track); margin: 0;">One consultant, first call to handover.</h2>
+        <p style="font: var(--body-lg); color: var(--text-secondary); max-width: 580px; margin: 22px 0 0;">Nine years inside enterprise software, on the teams that built these systems, not just sold them. Now building <a href="https://alvara.ae" target="_blank" rel="noopener" class="ulink" style="color: var(--blue); text-decoration: none;">Alvara</a>, an AI-native finance assistant live in Dubai. Every recommendation is independent, including do not buy that.</p>
+        <p style="font: var(--body-lg); color: var(--text-secondary); max-width: 580px; margin: 18px 0 0;">The person on the discovery call is the person who does the work.</p>
+      </div>
+    </div>
+    <div class="prev-strip" style="margin-top: 52px; padding-top: 34px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: center; gap: 44px; flex-wrap: wrap;">
+      <span style="font: 400 11px var(--font-mono); letter-spacing: 0.14em; color: var(--text-tertiary); text-transform: uppercase; white-space: nowrap;">Previously At</span>
+      <div style="display: flex; align-items: center; justify-content: center; gap: 52px; flex-wrap: wrap;">
+        <img class="plogo" src="logos/salesforce.png" alt="Salesforce" style="width: 134px; height: auto; display: block;">
+        <img class="plogo" src="logos/freshworks.svg" alt="Freshworks" style="width: 120px; height: auto; display: block;">
+        <img class="plogo" src="logos/yellowai.png" alt="Yellow.ai" style="width: 102px; height: auto; display: block;">
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="b-faq" class="sec" style="padding: 96px 56px; max-width: 1280px; margin: 0 auto;">
+    <div class="faq-card" style="background: var(--card); border: 1px solid var(--line); border-radius: 2px; box-shadow: 0 24px 60px rgba(12, 14, 17, 0.06); display: grid; grid-template-columns: 1fr 1fr; overflow: hidden;">
+      <div style="padding: 64px 56px; display: flex; flex-direction: column; justify-content: center;">
+        <div style="display: flex; align-items: center; gap: 10px; font: 400 12px/1.4 var(--font-mono); letter-spacing: 0.14em; color: var(--text-secondary); text-transform: uppercase;"><span style="width: 24px; height: 1px; background: var(--blue);"></span>Plain Answers</div>
+        <h2 style="font: var(--heading-1); letter-spacing: var(--h1-track); margin: 20px 0 0;">Asked on every first call.</h2>
+      </div>
+      <div style="padding: 28px 48px;">
+        <div style="border-bottom: 1px solid var(--line);">
+          <button type="button" data-faq-btn class="faq-btn" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 24px 0; background: transparent; border: none; cursor: pointer; text-align: left; font: 600 20px/1.35 var(--font-sans); letter-spacing: -0.015em; color: var(--ink);">
+            <span>Is this technical?</span>
+            <span style="position: relative; width: 20px; height: 20px; flex: none;"><span style="position: absolute; top: 50%; left: 0; width: 20px; height: 2px; margin-top: -1px; background: var(--blue);"></span><span data-faq-vert style="position: absolute; left: 50%; top: 0; width: 2px; height: 20px; margin-left: -1px; background: var(--blue); transition: transform 0.35s ease;"></span></span>
+          </button>
+          <div data-faq-panel style="max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.42s cubic-bezier(0.4, 0, 0.1, 1), opacity 0.3s ease;">
+            <p style="font: var(--body); color: var(--text-secondary); margin: 0 0 24px; max-width: 680px;">No. The conversation is about how work flows, not about software.</p>
+          </div>
+        </div>
+        <div style="border-bottom: 1px solid var(--line);">
+          <button type="button" data-faq-btn class="faq-btn" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 24px 0; background: transparent; border: none; cursor: pointer; text-align: left; font: 600 20px/1.35 var(--font-sans); letter-spacing: -0.015em; color: var(--ink);">
+            <span>Does anything need preparing?</span>
+            <span style="position: relative; width: 20px; height: 20px; flex: none;"><span style="position: absolute; top: 50%; left: 0; width: 20px; height: 2px; margin-top: -1px; background: var(--blue);"></span><span data-faq-vert style="position: absolute; left: 50%; top: 0; width: 2px; height: 20px; margin-left: -1px; background: var(--blue); transition: transform 0.35s ease;"></span></span>
+          </button>
+          <div data-faq-panel style="max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.42s cubic-bezier(0.4, 0, 0.1, 1), opacity 0.3s ease;">
+            <p style="font: var(--body); color: var(--text-secondary); margin: 0 0 24px; max-width: 680px;">Nothing. Bring the one process that eats the week.</p>
+          </div>
+        </div>
+        <div style="border-bottom: 1px solid var(--line);">
+          <button type="button" data-faq-btn class="faq-btn" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 24px 0; background: transparent; border: none; cursor: pointer; text-align: left; font: 600 20px/1.35 var(--font-sans); letter-spacing: -0.015em; color: var(--ink);">
+            <span>Will people lose their jobs?</span>
+            <span style="position: relative; width: 20px; height: 20px; flex: none;"><span style="position: absolute; top: 50%; left: 0; width: 20px; height: 2px; margin-top: -1px; background: var(--blue);"></span><span data-faq-vert style="position: absolute; left: 50%; top: 0; width: 2px; height: 20px; margin-left: -1px; background: var(--blue); transition: transform 0.35s ease;"></span></span>
+          </button>
+          <div data-faq-panel style="max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.42s cubic-bezier(0.4, 0, 0.1, 1), opacity 0.3s ease;">
+            <p style="font: var(--body); color: var(--text-secondary); margin: 0 0 24px; max-width: 680px;">No. The point is returning hours lost to work below anyone's skill level.</p>
+          </div>
+        </div>
+        <div style="border-bottom: 1px solid var(--line);">
+          <button type="button" data-faq-btn class="faq-btn" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 24px 0; background: transparent; border: none; cursor: pointer; text-align: left; font: 600 20px/1.35 var(--font-sans); letter-spacing: -0.015em; color: var(--ink);">
+            <span>What does the call cost?</span>
+            <span style="position: relative; width: 20px; height: 20px; flex: none;"><span style="position: absolute; top: 50%; left: 0; width: 20px; height: 2px; margin-top: -1px; background: var(--blue);"></span><span data-faq-vert style="position: absolute; left: 50%; top: 0; width: 2px; height: 20px; margin-left: -1px; background: var(--blue); transition: transform 0.35s ease;"></span></span>
+          </button>
+          <div data-faq-panel style="max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.42s cubic-bezier(0.4, 0, 0.1, 1), opacity 0.3s ease;">
+            <p style="font: var(--body); color: var(--text-secondary); margin: 0 0 24px; max-width: 680px;">Nothing. It ends with an honest read, including not yet.</p>
+          </div>
+        </div>
+        <div style="border-bottom: 1px solid var(--line);">
+          <button type="button" data-faq-btn class="faq-btn" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 24px 0; background: transparent; border: none; cursor: pointer; text-align: left; font: 600 20px/1.35 var(--font-sans); letter-spacing: -0.015em; color: var(--ink);">
+            <span>What happens after the call?</span>
+            <span style="position: relative; width: 20px; height: 20px; flex: none;"><span style="position: absolute; top: 50%; left: 0; width: 20px; height: 2px; margin-top: -1px; background: var(--blue);"></span><span data-faq-vert style="position: absolute; left: 50%; top: 0; width: 2px; height: 20px; margin-left: -1px; background: var(--blue); transition: transform 0.35s ease;"></span></span>
+          </button>
+          <div data-faq-panel style="max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.42s cubic-bezier(0.4, 0, 0.1, 1), opacity 0.3s ease;">
+            <p style="font: var(--body); color: var(--text-secondary); margin: 0 0 24px; max-width: 680px;">Only what makes sense. An audit if the numbers argue for one. Nothing if they do not.</p>
+          </div>
+        </div>
+        <div style="border-bottom: 1px solid var(--line);">
+          <button type="button" data-faq-btn class="faq-btn" style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: 24px 0; background: transparent; border: none; cursor: pointer; text-align: left; font: 600 20px/1.35 var(--font-sans); letter-spacing: -0.015em; color: var(--ink);">
+            <span>Which tools get recommended?</span>
+            <span style="position: relative; width: 20px; height: 20px; flex: none;"><span style="position: absolute; top: 50%; left: 0; width: 20px; height: 2px; margin-top: -1px; background: var(--blue);"></span><span data-faq-vert style="position: absolute; left: 50%; top: 0; width: 2px; height: 20px; margin-left: -1px; background: var(--blue); transition: transform 0.35s ease;"></span></span>
+          </button>
+          <div data-faq-panel style="max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.42s cubic-bezier(0.4, 0, 0.1, 1), opacity 0.3s ease;">
+            <p style="font: var(--body); color: var(--text-secondary); margin: 0 0 24px; max-width: 680px;">Whichever fit the work. No vendor pays for a place on the roadmap.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="b-contact" style="padding: 96px 0;">
+    <div class="sec-inner contact-grid" style="max-width: 1280px; margin: 0 auto; padding: 0 56px; display: grid; grid-template-columns: 1fr 460px; gap: 80px;">
+      <div>
+        <div style="display: flex; align-items: center; gap: 10px; font: 400 12px/1.4 var(--font-mono); letter-spacing: 0.14em; color: var(--text-secondary); text-transform: uppercase;"><span style="width: 24px; height: 1px; background: var(--blue);"></span>Next Step</div>
+        <h2 style="font: var(--heading-1); letter-spacing: var(--h1-track); margin: 20px 0 0; text-wrap: balance;">Bring one process that eats your week.</h2>
+        <p style="font: var(--body); color: var(--text-secondary); max-width: 440px; margin: 18px 0 0;">Thirty minutes on how the work runs today. If an audit makes sense, scope and fee are fixed before anything begins. If it does not, that gets said too.</p>
+      </div>
+      <div style="display: grid; gap: 22px; align-content: start; background: var(--card); border: 1px solid var(--line); border-radius: 2px; padding: 32px;">
+        <div>
+          <div style="font: 400 12px var(--font-mono); letter-spacing: 0.14em; color: var(--text-secondary); text-transform: uppercase;">Book A Call</div>
+          <div style="font: var(--heading-3); letter-spacing: var(--h3-track); margin: 14px 0 0;">Pick a time that suits.</div>
+          <p style="font: var(--body-sm); color: var(--text-secondary); margin: 12px 0 0;">No preparation needed. An honest read by the end, including not yet.</p>
+        </div>
+        <a href="https://calendar.app.google/ZWJTTVU98SCgrgff6" target="_blank" rel="noopener" class="btn-dark" style="display: inline-flex; align-items: center; justify-content: center; height: 46px; padding: 0 24px; background: var(--ink); color: var(--paper); font: 500 15px/1 var(--font-sans); border-radius: 2px; text-decoration: none;">Book A Discovery Call</a>
+        <div style="border-top: 1px solid var(--line); padding-top: 22px; display: grid; gap: 14px;">
+          <a href="mailto:me@muhzee.com" class="hover-blue" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink);">
+            <span style="width: 34px; height: 34px; flex: none; border: 1px solid var(--line); background: var(--card); display: grid; place-items: center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="1"></rect><path d="M3.5 6.5 L12 13 L20.5 6.5"></path></svg></span>
+            <span style="display: grid; gap: 3px;"><span style="font: 400 11px var(--font-mono); letter-spacing: 0.14em; color: var(--text-tertiary);">EMAIL</span><span style="font: 500 14px/1.3 var(--font-sans);">me@muhzee.com</span></span>
+          </a>
+          <a href="https://www.linkedin.com/in/mzshan" target="_blank" rel="noopener" class="hover-blue" style="display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink);">
+            <span style="width: 34px; height: 34px; flex: none; border: 1px solid var(--line); background: var(--card); display: grid; place-items: center; font: 600 13px var(--font-mono);">in</span>
+            <span style="display: grid; gap: 3px;"><span style="font: 400 11px var(--font-mono); letter-spacing: 0.14em; color: var(--text-tertiary);">LINKEDIN</span><span style="font: 500 14px/1.3 var(--font-sans);">linkedin.com/in/mzshan</span></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="display: flex; align-items: center; justify-content: space-between; padding: 30px 56px; border-top: 1px solid var(--line);">
+    <span style="display: flex; align-items: center; gap: 16px;">
+      <span style="width: 34px; height: 34px; background: var(--ink); color: var(--paper); display: grid; place-items: center; font: 400 13px var(--font-mono); letter-spacing: 0.04em;">MZ</span>
+      <span style="font: 400 11px var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary);">MUHAMMAD ZEESHAN · AI SYSTEMS CONSULTING · DUBAI, UAE</span>
+    </span>
+    <span class="foot-links" style="display: flex; align-items: center; gap: 28px;">
+      <a href="#b-about" class="hover-ink" style="font: 400 13.5px/1 var(--font-sans); color: var(--text-secondary); text-decoration: none;">About</a>
+      <a href="#b-faq" class="hover-ink" style="font: 400 13.5px/1 var(--font-sans); color: var(--text-secondary); text-decoration: none;">FAQ</a>
+      <a href="#b-contact" class="hover-ink" style="font: 400 13.5px/1 var(--font-sans); color: var(--text-secondary); text-decoration: none;">Contact</a>
+      <a href="privacy.html" class="hover-ink" style="font: 400 13.5px/1 var(--font-sans); color: var(--text-secondary); text-decoration: none;">Privacy</a>
+      <a href="terms.html" class="hover-ink" style="font: 400 13.5px/1 var(--font-sans); color: var(--text-secondary); text-decoration: none;">Terms</a>
+    </span>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- Typewriter hero ---- */
+  var words = [
+    { t: "where.", c: "var(--green)" },
+    { t: "what.",  c: "var(--blue)" },
+    { t: "how.",   c: "var(--amber)" }
+  ];
+  var wi = 0, ci = 0, deleting = false, typeT;
+  function tick() {
+    var el = document.querySelector('[data-type]');
+    if (!el) { typeT = setTimeout(tick, 400); return; }
+    var wrap = el.parentElement;
+    if (reduce) { el.textContent = words[0].t; if (wrap) wrap.style.color = words[0].c; return; }
+    var w = words[wi];
+    if (wrap) wrap.style.color = w.c;
+    if (!deleting) {
+      ci++; el.textContent = w.t.slice(0, ci);
+      if (ci >= w.t.length) { deleting = true; typeT = setTimeout(tick, 1300); return; }
+      typeT = setTimeout(tick, 82);
+    } else {
+      ci--; el.textContent = w.t.slice(0, ci);
+      if (ci <= 0) { deleting = false; wi = (wi + 1) % words.length; typeT = setTimeout(tick, 320); return; }
+      typeT = setTimeout(tick, 44);
+    }
+  }
+  setTimeout(tick, 600);
+
+  /* ---- How It Works: expanding panels ---- */
+  function applyPanels(row, idx) {
+    if (!row) return;
+    row.querySelectorAll('[data-panel]').forEach(function (p, i) {
+      var on = i === idx;
+      p.style.flexGrow = on ? '3.2' : '0.9';
+      p.style.filter = on ? 'none' : 'grayscale(1)';
+      p.style.opacity = on ? '1' : '0.5';
+      p.style.borderColor = on ? 'var(--blue)' : 'var(--line)';
+      p.querySelectorAll('[data-fade]').forEach(function (f) {
+        if (on) { f.style.display = ''; f.style.opacity = '0'; requestAnimationFrame(function () { f.style.opacity = '1'; }); }
+        else { f.style.opacity = '0'; f.style.display = 'none'; }
+      });
+    });
+  }
+  var panelRow = document.querySelector('[data-panel-row]');
+  if (panelRow) {
+    panelRow.querySelectorAll('[data-panel]').forEach(function (p) {
+      p.addEventListener('mouseenter', function () { applyPanels(panelRow, Number(p.dataset.panel)); });
+    });
+    panelRow.addEventListener('mouseleave', function () { applyPanels(panelRow, 0); });
+  }
+
+  /* ---- FAQ accordion ---- */
+  document.querySelectorAll('[data-faq-btn]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.parentElement;
+      var panel = item.querySelector('[data-faq-panel]');
+      var vert = item.querySelector('[data-faq-vert]');
+      if (!panel) return;
+      var open = panel.style.maxHeight && panel.style.maxHeight !== '0px';
+      if (open) { panel.style.maxHeight = '0px'; panel.style.opacity = '0'; if (vert) vert.style.transform = ''; }
+      else { panel.style.maxHeight = panel.scrollHeight + 'px'; panel.style.opacity = '1'; if (vert) vert.style.transform = 'rotate(90deg)'; }
+    });
+  });
+
+  /* ---- Hover-reactive grid canvas ---- */
+  var canvas = document.getElementById('grid-canvas');
+  if (canvas && !reduce) {
+    var ctx = canvas.getContext('2d');
+    var cfg = { gridSize: 56, radius: 300, maxDist: 400, repulsion: -0.62, dotSize: 1.6, thickness: 0.6, baseOpacity: 0.12, grid: [122, 130, 140], hover: [31, 61, 240], stiffness: 0.05, damping: 0.72 };
+    var dots, gw, gh, mouse = null, raf = null, settleUntil = 0;
+    var mapv = cfg.repulsion <= 0 ? cfg.repulsion * 25 : cfg.repulsion * 90;
+    function build() {
+      var w = window.innerWidth, h = window.innerHeight;
+      canvas.width = w; canvas.height = h; gw = w; gh = h;
+      var gs = cfg.gridSize; dots = new Map();
+      for (var gx = -gs; gx < w + gs * 2; gx += gs)
+        for (var gy = -gs; gy < h + gs * 2; gy += gs)
+          dots.set(gx + ',' + gy, { bx: gx, by: gy, x: gx, y: gy, vx: 0, vy: 0 });
+      draw();
+    }
+    function hov(x, y) { if (!mouse) return 0; var d = Math.hypot(x - mouse.x, y - mouse.y); if (d > cfg.radius) return 0; return Math.pow(1 - d / cfg.radius, 3.5); }
+    function push(bx, by) { if (!mouse || mapv === 0) return [0, 0]; var dx = bx - mouse.x, dy = by - mouse.y, d = Math.hypot(dx, dy); if (d === 0) return [0, 0]; var nd = Math.min(d / cfg.maxDist, 1), amt = Math.pow(1 - nd, 2) * mapv; return [dx / d * amt, dy / d * amt]; }
+    function draw() {
+      if (!ctx || !dots) return;
+      var w = gw, h = gh, gs = cfg.gridSize;
+      ctx.clearRect(0, 0, w, h);
+      dots.forEach(function (dt) {
+        var p = push(dt.bx, dt.by); var tx = dt.bx + p[0], ty = dt.by + p[1];
+        dt.vx = (dt.vx + (tx - dt.x) * cfg.stiffness) * cfg.damping;
+        dt.vy = (dt.vy + (ty - dt.y) * cfg.stiffness) * cfg.damping;
+        dt.x += dt.vx; dt.y += dt.vy;
+      });
+      var gc = cfg.grid, hc = cfg.hover, base = cfg.baseOpacity;
+      function line(a, b) {
+        var hv = (hov(a.x, a.y) + hov(b.x, b.y)) / 2;
+        var r = Math.round(gc[0] + (hc[0] - gc[0]) * hv), g = Math.round(gc[1] + (hc[1] - gc[1]) * hv), bl = Math.round(gc[2] + (hc[2] - gc[2]) * hv);
+        ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y);
+        ctx.lineWidth = cfg.thickness + hv * 2.4;
+        ctx.strokeStyle = 'rgba(' + r + ',' + g + ',' + bl + ',' + (base + (1 - base) * hv) + ')';
+        ctx.stroke();
+      }
+      dots.forEach(function (dt, key) {
+        var parts = key.split(','), gx = +parts[0], gy = +parts[1];
+        var rd = dots.get((gx + gs) + ',' + gy), bd = dots.get(gx + ',' + (gy + gs));
+        if (rd) line(dt, rd); if (bd) line(dt, bd);
+      });
+      dots.forEach(function (dt) {
+        var hv = hov(dt.x, dt.y);
+        var r = Math.round(gc[0] + (hc[0] - gc[0]) * hv), g = Math.round(gc[1] + (hc[1] - gc[1]) * hv), bl = Math.round(gc[2] + (hc[2] - gc[2]) * hv);
+        var rad = Math.max(cfg.dotSize * 0.5, cfg.dotSize + hv * cfg.dotSize);
+        ctx.beginPath(); ctx.arc(dt.x, dt.y, rad, 0, 6.2832);
+        ctx.fillStyle = 'rgba(' + r + ',' + g + ',' + bl + ',' + (base + (1 - base) * hv) + ')';
+        ctx.fill();
+      });
+    }
+    function kick() {
+      if (raf != null) return;
+      function loop() { draw(); if (!mouse && performance.now() > settleUntil) { raf = null; return; } raf = requestAnimationFrame(loop); }
+      raf = requestAnimationFrame(loop);
+    }
+    build();
+    window.addEventListener('resize', build);
+    window.addEventListener('mousemove', function (e) { mouse = { x: e.clientX, y: e.clientY }; settleUntil = performance.now() + 1300; kick(); });
+    document.addEventListener('mouseleave', function () { mouse = null; settleUntil = performance.now() + 1300; kick(); });
+  }
+})();
+</script>
+
+</body>
+</html>

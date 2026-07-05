@@ -38,6 +38,8 @@
   "@type": "Person",
   "name": "Muhammad Zeeshan",
   "jobTitle": "AI Systems Consultant",
+  "description": "Independent AI systems consultant in Dubai, helping UAE businesses find where AI fits, what it is worth in hours and cost, and whether it is worth doing. Founder of Alvara.",
+  "knowsAbout": ["AI systems consulting", "Business process automation", "AI process audit", "Workflow automation", "Operations efficiency"],
   "url": "https://muhzee.com",
   "email": "mailto:me@muhzee.com",
   "image": "https://muhzee.com/muhammad-zeeshan.jpg",
@@ -61,6 +63,20 @@
       "description": "A two-week audit of a business's three heaviest processes: benchmarked hours and cost, a prioritized automation roadmap, and a fixed-fee quote per roadmap item."
     }
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "Is this technical?", "acceptedAnswer": { "@type": "Answer", "text": "No. The conversation is about how work flows, not about software." } },
+    { "@type": "Question", "name": "Does anything need preparing?", "acceptedAnswer": { "@type": "Answer", "text": "Nothing. Bring the one process that eats the week." } },
+    { "@type": "Question", "name": "Will people lose their jobs?", "acceptedAnswer": { "@type": "Answer", "text": "No. The point is returning hours lost to work below anyone's skill level." } },
+    { "@type": "Question", "name": "What does the call cost?", "acceptedAnswer": { "@type": "Answer", "text": "Nothing. It ends with an honest read, including not yet." } },
+    { "@type": "Question", "name": "What happens after the call?", "acceptedAnswer": { "@type": "Answer", "text": "Only what makes sense. An audit if the numbers argue for one. Nothing if they do not." } },
+    { "@type": "Question", "name": "Which tools get recommended?", "acceptedAnswer": { "@type": "Answer", "text": "Whichever fit the work. No vendor pays for a place on the roadmap." } }
+  ]
 }
 </script>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -132,6 +148,7 @@
   .btn-dark:hover { background: var(--blue) !important; }
   .btn-dark:active { transform: translateY(1px); }
   .card-hover:hover { border-color: var(--blue) !important; }
+  .nav-cta .cta-short { display: none; }
   .ulink:hover { text-decoration: underline !important; }
   .faq-btn:hover { color: var(--blue) !important; }
   /* Previously-At logos: grayscale by default, brand color on hover */
@@ -171,7 +188,10 @@
   }
   @media (max-width: 980px) {
     .panel-row { flex-direction: column !important; }
-    .panel-row > [data-panel] { flex: none !important; width: 100%; height: 300px !important; opacity: 1 !important; filter: none !important; border-color: var(--line) !important; }
+    .panel-row > [data-panel] { flex: none !important; width: 100%; height: auto !important; padding: 30px 26px 34px !important; opacity: 1 !important; filter: none !important; border-color: var(--line) !important; }
+    .panel-row [data-panel] > span { display: none !important; }
+    .panel-row .panel-fig { display: none !important; }
+    .panel-row .panel-copy { position: static !important; left: auto !important; right: auto !important; bottom: auto !important; }
     .panel-row [data-fade] { opacity: 1 !important; display: block !important; }
   }
   @media (max-width: 920px) {
@@ -196,6 +216,8 @@
     .faq-card > div:last-child { padding: 20px 24px !important; }
     .about-card { padding: 32px 24px 36px !important; }
     .three-words { font-size: 20px !important; }
+    .nav-cta .cta-full { display: none !important; }
+    .nav-cta .cta-short { display: inline !important; }
   }
   @media (max-width: 480px) {
     .hero-fig { display: none !important; }
@@ -215,7 +237,7 @@
   <!-- Nav -->
   <nav class="site-nav" style="position: sticky; top: 0; z-index: 50; display: flex; align-items: center; justify-content: space-between; height: 76px; padding: 0 56px; background: rgba(250, 251, 252, 0.82); backdrop-filter: blur(12px);">
     <a href="#top" class="brand" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink);">
-      <span style="width: 34px; height: 34px; border: 1px solid var(--ink); display: grid; place-items: center; font: 400 13px var(--font-mono); letter-spacing: 0.04em;">MZ</span>
+      <span style="width: 34px; height: 34px; flex: none; border: 1px solid var(--ink); display: grid; place-items: center; font: 400 13px var(--font-mono); letter-spacing: 0.04em;">MZ</span>
       <span style="font: 600 16px/1.2 var(--font-sans); letter-spacing: -0.01em;">Muhammad Zeeshan<span style="display: block; font: 400 11px/1.4 var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary); margin-top: 3px;">AI SYSTEMS CONSULTING · DUBAI</span></span>
     </a>
     <div class="nav-links" style="display: flex; align-items: center; gap: 30px;">
@@ -223,7 +245,7 @@
       <a href="#b-how" class="hover-ink" style="font: 500 14px/1 var(--font-sans); color: var(--text-secondary); text-decoration: none;">How It Works</a>
       <a href="#b-about" class="hover-ink" style="font: 500 14px/1 var(--font-sans); color: var(--text-secondary); text-decoration: none;">Who's Behind It</a>
       <a href="#b-faq" class="hover-ink" style="font: 500 14px/1 var(--font-sans); color: var(--text-secondary); text-decoration: none;">FAQ</a>
-      <a href="#b-contact" class="btn-dark" style="display: inline-flex; align-items: center; height: 36px; padding: 0 16px; background: var(--ink); color: var(--paper); font: 500 13.5px/1 var(--font-sans); border-radius: 2px; text-decoration: none;">Book A Discovery Call</a>
+      <a href="#b-contact" class="btn-dark nav-cta" style="display: inline-flex; align-items: center; height: 36px; padding: 0 16px; background: var(--ink); color: var(--paper); font: 500 13.5px/1 var(--font-sans); border-radius: 2px; text-decoration: none; white-space: nowrap;"><span class="cta-full">Book A Discovery Call</span><span class="cta-short">Book A Call</span></a>
     </div>
   </nav>
 
@@ -327,7 +349,7 @@
           <span style="position: absolute; top: 21px; left: 15px; width: 13px; height: 1px; background: var(--ink);"></span>
           <span style="position: absolute; top: 15px; left: 21px; width: 1px; height: 13px; background: var(--ink);"></span>
           <span style="position: absolute; top: 18px; right: 20px; font: 400 11px var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary);">FIG. 02</span>
-          <div style="position: absolute; top: 40px; left: 28px; width: 660px; height: 200px;">
+          <div class="panel-fig" style="position: absolute; top: 40px; left: 28px; width: 660px; height: 200px;">
             <svg viewBox="0 0 660 200" width="660" height="200" fill="none" style="overflow: visible;">
               <path d="M28 74 L20 92 L44 74 Z" style="fill: var(--card); stroke: var(--gray-400);" stroke-width="1.4" stroke-linejoin="round"></path>
               <rect x="6" y="10" width="200" height="64" rx="10" style="fill: var(--card); stroke: var(--gray-400);" stroke-width="1.4"></rect>
@@ -358,7 +380,7 @@
             </svg>
           </div>
           <span style="position: absolute; left: 0; right: 0; bottom: 0; height: 176px; background: linear-gradient(180deg, transparent 0%, var(--card) 58%); pointer-events: none;"></span>
-          <div style="position: absolute; left: 26px; right: 26px; bottom: 28px;">
+          <div class="panel-copy" style="position: absolute; left: 26px; right: 26px; bottom: 28px;">
             <div data-fade style="font: 400 11px var(--font-mono); letter-spacing: 0.12em; color: var(--blue); opacity: 1; transition: opacity 0.4s ease;">STEP ONE</div>
             <div style="font: 700 46px/1.0 var(--font-sans); letter-spacing: -0.028em; margin-top: 10px; white-space: nowrap;">Talk<span style="color: var(--blue);">.</span></div>
             <p data-fade style="font: var(--body-sm); color: var(--text-secondary); margin: 12px 0 0; max-width: 300px; opacity: 1; transition: opacity 0.4s ease;">A 30-minute call about how one process runs today. Nothing to prepare.</p>
@@ -370,7 +392,7 @@
           <span style="position: absolute; top: 21px; left: 15px; width: 13px; height: 1px; background: var(--ink);"></span>
           <span style="position: absolute; top: 15px; left: 21px; width: 1px; height: 13px; background: var(--ink);"></span>
           <span style="position: absolute; top: 18px; right: 20px; font: 400 11px var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary);">FIG. 03</span>
-          <div style="position: absolute; top: 40px; left: 28px; width: 660px; height: 200px;">
+          <div class="panel-fig" style="position: absolute; top: 40px; left: 28px; width: 660px; height: 200px;">
             <svg viewBox="0 0 660 200" width="660" height="200" fill="none" style="overflow: visible;">
               <line x1="20" y1="182" x2="640" y2="182" style="stroke: var(--gray-300);" stroke-width="1"></line>
               <line x1="150" y1="64" x2="390" y2="58" style="stroke: var(--gray-300);" stroke-width="1" stroke-dasharray="4 6"></line>
@@ -389,7 +411,7 @@
             <span style="position: absolute; left: 0; top: 0; width: 9px; height: 9px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 0 3px var(--blue-tint); offset-path: path('M36 150 L150 64 L270 120 L390 58 L510 128 L620 60'); offset-anchor: 50% 50%; animation: mapMove 6s cubic-bezier(0.45, 0, 0.15, 1) infinite;"></span>
           </div>
           <span style="position: absolute; left: 0; right: 0; bottom: 0; height: 176px; background: linear-gradient(180deg, transparent 0%, var(--card) 58%); pointer-events: none;"></span>
-          <div style="position: absolute; left: 26px; right: 26px; bottom: 28px;">
+          <div class="panel-copy" style="position: absolute; left: 26px; right: 26px; bottom: 28px;">
             <div data-fade style="font: 400 11px var(--font-mono); letter-spacing: 0.12em; color: var(--blue); opacity: 0; display: none; transition: opacity 0.4s ease;">STEP TWO</div>
             <div style="font: 700 46px/1.0 var(--font-sans); letter-spacing: -0.028em; margin-top: 10px; white-space: nowrap;">Map<span style="color: var(--blue);">.</span></div>
             <p data-fade style="font: var(--body-sm); color: var(--text-secondary); margin: 12px 0 0; max-width: 300px; opacity: 0; display: none; transition: opacity 0.4s ease;">A two-week audit of the three heaviest processes — the hours, the cost, a plan. Yours to keep.</p>
@@ -401,7 +423,7 @@
           <span style="position: absolute; top: 21px; left: 15px; width: 13px; height: 1px; background: var(--ink);"></span>
           <span style="position: absolute; top: 15px; left: 21px; width: 1px; height: 13px; background: var(--ink);"></span>
           <span style="position: absolute; top: 18px; right: 20px; font: 400 11px var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary);">FIG. 04</span>
-          <div style="position: absolute; top: 40px; left: 28px; width: 660px; height: 200px;">
+          <div class="panel-fig" style="position: absolute; top: 40px; left: 28px; width: 660px; height: 200px;">
             <svg viewBox="0 0 660 200" width="660" height="200" fill="none" style="overflow: visible;">
               <path d="M18 100 L132 100" style="stroke: var(--ink);" stroke-width="1.6" stroke-linecap="round"></path>
               <rect x="133" y="85" width="30" height="30" rx="3" transform="rotate(45 148 100)" style="fill: var(--card); stroke: var(--ink);" stroke-width="1.5"></rect>
@@ -423,7 +445,7 @@
             </svg>
           </div>
           <span style="position: absolute; left: 0; right: 0; bottom: 0; height: 176px; background: linear-gradient(180deg, transparent 0%, var(--card) 58%); pointer-events: none;"></span>
-          <div style="position: absolute; left: 26px; right: 26px; bottom: 28px;">
+          <div class="panel-copy" style="position: absolute; left: 26px; right: 26px; bottom: 28px;">
             <div data-fade style="font: 400 11px var(--font-mono); letter-spacing: 0.12em; color: var(--blue); opacity: 0; display: none; transition: opacity 0.4s ease;">STEP THREE</div>
             <div style="font: 700 46px/1.0 var(--font-sans); letter-spacing: -0.028em; margin-top: 10px; color: var(--blue); white-space: nowrap;">Decide<span style="color: var(--blue);">.</span></div>
             <p data-fade style="font: var(--body-sm); color: var(--text-secondary); margin: 12px 0 0; max-width: 300px; opacity: 0; display: none; transition: opacity 0.4s ease;">Build together, build alone, or wait. The plan does not expire.</p>
@@ -563,7 +585,7 @@
   <!-- Footer -->
   <footer class="site-footer" style="display: flex; align-items: center; justify-content: space-between; padding: 30px 56px;">
     <span style="display: flex; align-items: center; gap: 16px;">
-      <span style="width: 34px; height: 34px; background: var(--ink); color: var(--paper); display: grid; place-items: center; font: 400 13px var(--font-mono); letter-spacing: 0.04em;">MZ</span>
+      <span style="width: 34px; height: 34px; flex: none; background: var(--ink); color: var(--paper); display: grid; place-items: center; font: 400 13px var(--font-mono); letter-spacing: 0.04em;">MZ</span>
       <span style="font: 400 11px var(--font-mono); letter-spacing: 0.1em; color: var(--text-tertiary);">MUHAMMAD ZEESHAN · AI SYSTEMS CONSULTING · DUBAI, UAE</span>
     </span>
     <span class="foot-links" style="display: flex; align-items: center; gap: 28px;">

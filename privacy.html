@@ -36,6 +36,16 @@
   footer { border-top: 1px solid var(--line); }
   footer .wrap { padding-top: 28px; padding-bottom: 28px; font: 400 11px var(--font-mono); letter-spacing: 0.1em; color: var(--gray-500); text-transform: uppercase; }
 </style>
+
+<!-- PostHog -->
+<script>
+  !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+  posthog.init('phc_mzVFy25i48Ynk9Zhj9edEgdbkiKSHHYZsgWv7oHwb9c9', {
+    api_host: 'https://eu.i.posthog.com',
+    defaults: '2025-05-24',
+    person_profiles: 'identified_only'
+  });
+</script>
 </head>
 <body>
   <header><div class="wrap"><a class="mark" href="index.html">MZ</a><a href="index.html" style="color: var(--ink); font: 600 15px/1 var(--font-sans);">Muhammad Zeeshan</a></div></header>
@@ -43,7 +53,7 @@
     <div class="kicker">Legal</div>
     <h1>Privacy Policy</h1>
     <p style="font: 400 12px var(--font-mono); letter-spacing: 0.08em; color: var(--gray-500); margin: 14px 0 0; text-transform: uppercase;">Effective 5 July 2026</p>
-    <div class="note">In short: this is a static site with no contact form, no advertising, and no analytics tracking. It does not sell your data. The only information handled is what you send when you book a call or email.</div>
+    <div class="note">In short: this is a static site with no contact form and no advertising. It uses privacy-conscious, anonymous analytics to understand how the site is used, does not sell your data, and handles personal details only when you book a call or email.</div>
 
     <h2>Who Runs This Site</h2>
     <p>This site, muhzee.com, is operated by Muhammad Zeeshan, who runs an AI systems consulting practice based in Dubai, United Arab Emirates. This policy explains how information from visitors and prospective clients is handled.</p>
@@ -55,7 +65,7 @@
     <p>Information you send is used only to respond to your enquiry, to schedule and hold calls, and to carry out any work you later engage me for. It is not sold, rented, or used for advertising. It is kept only as long as needed for our correspondence and any resulting engagement, and for records I am required to keep.</p>
 
     <h2>Third Party Services</h2>
-    <p>Two services support this site. Fonts are loaded from Google Fonts, which means your browser requests them from Google and Google receives your IP address in order to serve them. Call bookings run on Google Calendar appointment scheduling, so Google processes the booking details on my behalf. Both are covered by Google's own privacy terms. The site sets no advertising or analytics cookies of its own.</p>
+    <p>Three services support this site. Fonts are loaded from Google Fonts, which means your browser requests them from Google and Google receives your IP address in order to serve them. Call bookings run on Google Calendar appointment scheduling, so Google processes the booking details on my behalf. Basic analytics are provided by PostHog, hosted in the European Union, to understand which pages and links visitors use; this relies on cookies or similar local storage and records information such as approximate location, device, and browser. The analytics are anonymous, are not used for advertising, and do not identify you personally. Each service is covered by its provider's own privacy terms.</p>
 
     <h2>Your Choices</h2>
     <p>You can contact me at any time to ask what information I hold about you, to correct it, or to have it deleted, subject to any records I am legally required to retain. This policy is governed by the laws of the United Arab Emirates.</p>
